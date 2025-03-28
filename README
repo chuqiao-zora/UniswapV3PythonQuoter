@@ -1,0 +1,38 @@
+Initial price: 2000.0000000000002
+Initial tick: 76012
+Debug: liquidity0=8933597624562, liquidity1=2264237438232858382
+Debug: Using min liquidity=8933597624562
+
+After mint NFT:
+NFT Position: ('0xuser1', 75000, 77040, 8933597624562)
+Liquidity: 8933597624562
+USDC used: 9999.999999
+ETH used: 1.972760778908e-05
+Current pool liquidity: 8933597624562
+Debug: liquidity0=4466798812281, liquidity1=1132118719116429191
+Debug: Using min liquidity=4466798812281
+
+After increase liquidity:
+NFT Position: ('0xuser1', 75000, 77040, 13400396436843)
+Additional liquidity: 4466798812281
+Additional USDC used: 4999.999999
+Additional ETH used: 9.86380389454e-06
+Current pool liquidity: 13400396436843
+
+After decrease liquidity:
+NFT Position: ('0xuser1', 75000, 77040, 9380277505791)
+Removed liquidity: 4020118931052
+USDC received: 4499.999999
+ETH received: 8.877423505084e-06
+Current pool liquidity: 9380277505791
+
+New price: 2099.9999999999995
+New tick: 76500
+Current liquidity: 9380277505791
+
+After removing all liquidity:
+Token ID in nft_positions: False
+USDC received: 5445.055206
+init working example
+ETH received: 3.1073542263107e-05
+Current pool liquidity: 0
