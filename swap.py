@@ -886,12 +886,12 @@ class UniswapV3Pool:
         
         # Initialize helper classes
         self.tick_bitmap = TickBitmap({})
+        self.ticks = Ticks({})
         self.tick_math = TickMath()
         self.swap_math = SwapMath()
         self.liquidity_math = LiquidityMath()
         self.full_math = FullMath()
         self.observations = Observations([])
-        self.ticks = Ticks({})
         self.transfer_helper = TransferHelper({})
         
         # These would be initialized with actual implementations
