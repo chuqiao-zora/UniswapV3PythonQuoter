@@ -2,6 +2,8 @@ from typing import Dict, Tuple
 
 
 class TickBitmap:
+    # Reference: https://github.com/Uniswap/v3-core/blob/main/contracts/libraries/TickBitmap.sol
+    
     def __init__(self, position_mapping):
         self.position_mapping = position_mapping
     
@@ -97,11 +99,14 @@ class TickBitmap:
     
 
 class TickMath:
+    # Reference: https://github.com/Uniswap/v3-core/blob/main/contracts/libraries/TickMath.sol
+
     # Tick range constants
     MIN_TICK = -887272
     MAX_TICK = 887272
     
     # Price range constants
+
     MIN_SQRT_RATIO = 4295128739
     MAX_SQRT_RATIO = 1461446703485210103287273052203988822378723970342
     
@@ -229,6 +234,7 @@ class TickMath:
             return lower_tick
         
 class SwapMath:
+    # Reference: https://github.com/Uniswap/v3-core/blob/main/contracts/libraries/SwapMath.sol
     def compute_swap_step(self, sqrt_ratio_current_x96, sqrt_ratio_target_x96, liquidity, amount_remaining, fee_pips):
         """
         Computes a single step of a swap
@@ -555,6 +561,9 @@ class FullMath:
         return result
     
 class Observations:
+    # NOTE: This class is optional for us
+    # It is to create the oracle for the pool
+
     def __init__(self, observations):
         """
         Initialize the oracle with observations
@@ -731,6 +740,8 @@ class Observations:
         return (seconds_delta << 128) // liquidity
     
 class Ticks:
+    # Referece: https://github.com/Uniswap/v3-core/blob/main/contracts/libraries/Tick.sol
+
     def __init__(self, ticks):
         """
         Initialize the ticks mapping
